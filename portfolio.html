@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="FRAMEX DIGITAL portfolio — real video and Instagram work, playable directly on the site.">
+  <title>Portfolio — FRAMEX DIGITAL</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="portfolio-page">
+  <div data-site-nav></div>
+  <main>
+    <section class="wrap page-hero portfolio-hero">
+      <div>
+        <span class="kicker">SELECTED WORK</span>
+        <h1>Real work.<br><span class="grad">Tap. Play. Watch.</span></h1>
+        <p>Every card below is connected to a real video or social post. Click a project to open the embedded player without leaving FRAMEX DIGITAL.</p>
+      </div>
+      <div class="portfolio-proof">
+        <span class="proof-dot"></span>
+        <span>Live embeds • No fake demos</span>
+      </div>
+    </section>
+
+    <section class="wrap portfolio-section">
+      <div class="portfolio-toolbar">
+        <div>
+          <span class="eyebrow">VIDEO PORTFOLIO</span>
+          <h2>Work that speaks for itself.</h2>
+        </div>
+        <p>Use the cards to preview the project, then watch the real embed in the player.</p>
+      </div>
+
+      <div class="portfolio-gallery" data-portfolio-grid aria-live="polite"></div>
+
+      <div class="portfolio-empty" data-portfolio-empty hidden>
+        <strong>No portfolio items configured yet.</strong>
+        <span>Add your real YouTube / Instagram links in Vercel Environment Variables.</span>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="wide-cta reveal">
+        <div>
+          <span class="kicker cta-kicker">YOUR PROJECT NEXT</span>
+          <h2>Ready to make something worth watching?</h2>
+          <p>Tell us what you need and we’ll turn it into a clean digital experience or a polished event film.</p>
+        </div>
+        <div class="actions">
+          <a class="btn" style="background:#fff;color:#101116;border:0" data-wa="1">WhatsApp us</a>
+          <a class="btn" style="background:rgba(0,0,0,.14);border-color:rgba(255,255,255,.25)" href="/contact">Start a brief</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <div class="media-modal" data-media-modal aria-hidden="true">
+    <div class="media-modal-backdrop" data-modal-close></div>
+    <div class="media-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="media-modal-title">
+      <div class="media-modal-top">
+        <div>
+          <span class="eyebrow" data-modal-type>PROJECT</span>
+          <h2 id="media-modal-title" data-modal-title>Project</h2>
+        </div>
+        <button class="modal-close" type="button" data-modal-close aria-label="Close video">×</button>
+      </div>
+      <div class="media-modal-player" data-modal-player></div>
+      <div class="media-modal-footer">
+        <span class="note" data-modal-note>Embedded from the original source.</span>
+        <a class="btn btn-soft" data-modal-source href="#" target="_blank" rel="noopener">Open source</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/app.js" defer></script>
+</body>
+</html>
